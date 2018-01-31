@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orgId: MyString
+  subType: MyString
+  submissionType: MyString
+  SubStartDate: MyString
+  SubEndDate: MyString
+  FileSpecVersion: MyString
+  resubmitNo: 1
+  Load_YN: MyString
+  Load_Status: MyString
+  InsDateTime: MyString
+  subcomments: MyText
+  ASC_Cohorts: MyString
+
+two:
+  orgId: MyString
+  subType: MyString
+  submissionType: MyString
+  SubStartDate: MyString
+  SubEndDate: MyString
+  FileSpecVersion: MyString
+  resubmitNo: 1
+  Load_YN: MyString
+  Load_Status: MyString
+  InsDateTime: MyString
+  subcomments: MyText
+  ASC_Cohorts: MyString

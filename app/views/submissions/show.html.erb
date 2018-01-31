@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orgid:</strong>
+  <%= @submission.orgId %>
+</p>
+
+<p>
+  <strong>Subtype:</strong>
+  <%= @submission.subType %>
+</p>
+
+<p>
+  <strong>Submissiontype:</strong>
+  <%= @submission.submissionType %>
+</p>
+
+<p>
+  <strong>Substartdate:</strong>
+  <%= @submission.SubStartDate %>
+</p>
+
+<p>
+  <strong>Subenddate:</strong>
+  <%= @submission.SubEndDate %>
+</p>
+
+<p>
+  <strong>Filespecversion:</strong>
+  <%= @submission.FileSpecVersion %>
+</p>
+
+<p>
+  <strong>Resubmitno:</strong>
+  <%= @submission.resubmitNo %>
+</p>
+
+<p>
+  <strong>Load yn:</strong>
+  <%= @submission.Load_YN %>
+</p>
+
+<p>
+  <strong>Load status:</strong>
+  <%= @submission.Load_Status %>
+</p>
+
+<p>
+  <strong>Insdatetime:</strong>
+  <%= @submission.InsDateTime %>
+</p>
+
+<p>
+  <strong>Subcomments:</strong>
+  <%= @submission.subcomments %>
+</p>
+
+<p>
+  <strong>Asc cohorts:</strong>
+  <%= @submission.ASC_Cohorts %>
+</p>
+
+<%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submissions_path %>

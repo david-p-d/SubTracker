@@ -1,0 +1,77 @@
+<%= form_with(model: submission, local: true) do |form| %>
+  <% if submission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
+
+      <ul>
+      <% submission.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :orgId %>
+    <%= form.text_field :orgId, id: :submission_orgId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subType %>
+    <%= form.text_field :subType, id: :submission_subType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :submissionType %>
+    <%= form.text_field :submissionType, id: :submission_submissionType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SubStartDate %>
+    <%= form.text_field :SubStartDate, id: :submission_SubStartDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SubEndDate %>
+    <%= form.text_field :SubEndDate, id: :submission_SubEndDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :FileSpecVersion %>
+    <%= form.text_field :FileSpecVersion, id: :submission_FileSpecVersion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resubmitNo %>
+    <%= form.number_field :resubmitNo, id: :submission_resubmitNo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Load_YN %>
+    <%= form.text_field :Load_YN, id: :submission_Load_YN %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Load_Status %>
+    <%= form.text_field :Load_Status, id: :submission_Load_Status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :InsDateTime %>
+    <%= form.text_field :InsDateTime, id: :submission_InsDateTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subcomments %>
+    <%= form.text_area :subcomments, id: :submission_subcomments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ASC_Cohorts %>
+    <%= form.text_field :ASC_Cohorts, id: :submission_ASC_Cohorts %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
